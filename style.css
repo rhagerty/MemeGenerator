@@ -1,0 +1,124 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: lightcyan;
+	margin-top: 10px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+h1,
+h2,
+div.memeForm {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+form {
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+}
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#submitForm {
+	background-color: rgb(43, 159, 226);
+	padding: 10px 18px;
+	font-size: 14px;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	outline: none;
+}
+#submitForm:hover {
+	background-color: rgb(28, 106, 151);
+}
+#submitForm:active {
+	background-color: rgb(28, 106, 151);
+	transform: translateY(4px);
+}
+.meme {
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	height: auto;
+	text-align: center;
+	z-index: 2;
+	margin: none;
+}
+
+.meme img {
+	width: 500px;
+}
+.meme:hover {
+	opacity: 0.7;
+}
+.deleteMeme {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -66%);
+	font-weight: 700;
+	text-align: center;
+	font-size: 2000%;
+	opacity: 0;
+	font-weight: bold;
+	color: red;
+	z-index: 4;
+	content: "X";
+	background: transparent;
+	border: none;
+}
+
+.deleteMeme:hover {
+	opacity: 1.6;
+	z-index: 4;
+}
+
+.textTop {
+	position: absolute;
+	top: 2px;
+	line-height: 1em;
+	font-family: 'Bungee', cursive;
+	width: 100%;
+	color: white;
+	z-index: 3;
+	font-size: 250%;
+	max-height: 50%;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.textBottom {
+	position: absolute;
+	bottom: 2px;
+	line-height: 1em;
+	font-family: 'Bungee', cursive;
+	width: 100%;
+	color: white;
+	z-index: 3;
+	font-size: 250%;
+	max-height: 50%;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
